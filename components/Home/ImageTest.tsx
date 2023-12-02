@@ -23,10 +23,10 @@ const ImageTest = () => {
                 type="file"
                 accept="image/*,video/*"
                 onChange={handleFileChange}
-                className="w-full h-full z-50 opacity-0 absolute top-0 left-0 cursor-pointer"
+                className="w-full h-full z-50 opacity-0 absolute top-0 left-0 cursor-pointer border-0"
               />{" "}
               <LuUpload className="sm:text-5xl text-4xl text-black-main flex-shrink-0" />
-              <h2 className="text-black-main sm:text-3xl text-xl text-center font-semi-bold sm:w-auto w-full rounded-xl font-medium border-2 border-white-main hover:bg-white-main/10 hover:duration-200">
+              <h2 className="text-black-main sm:text-3xl text-xl text-center font-semi-bold sm:w-auto w-full rounded-xl font-medium">
                 Upload Here
               </h2>
               <p className="">
