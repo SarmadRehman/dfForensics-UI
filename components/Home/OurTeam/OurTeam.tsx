@@ -21,15 +21,15 @@ const OurTeam = () => {
     {
       name: "Asad Mirza",
       avatar: "/Assets/Team/Person.avif",
-      role: "Admin",
+      role: "Researcher",
       twitter: "",
       linkedin: "",
       github: "",
     },
     {
       name: "Wijdan Haider",
-      avatar: "/Assets/Team/Person.avif",
-      role: "Admin",
+      avatar: "/Assets/Team/wijdan.jpeg",
+      role: "Researcher",
       twitter: "",
       linkedin: "",
       github: "",
@@ -37,9 +37,9 @@ const OurTeam = () => {
     {
       name: "Sarmad Rehman",
       avatar: "/Assets/Team/sarmad.png",
-      role: "Admin",
+      role: "Researcher",
       twitter: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/sarmad-rehman-bb450b1bb/",
       github: "",
     },
   ];
