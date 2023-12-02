@@ -12,6 +12,7 @@ import Navbar from "@/components/Shared/Navigations/Navbar";
 import ImageTest from "@/components/Home/ImageTest";
 import OurTeam from "@/components/Home/OurTeam/OurTeam";
 import "./swiper.css";
+import UseCases from "@/components/Home/ProcessFlow/ProcessFlow";
 export default function Home() {
   return (
     <main className="w-full h-full bg-white-main overflow-hidden">
@@ -20,8 +21,10 @@ export default function Home() {
         <Navbar />
         <Hero />
       </section>
+      {/* input component */}
       <ImageTest />
-      <ProcessFlow />
+
+      <UseCases />
       <HowItWorks />
       <MatchJobs />
       <Features />

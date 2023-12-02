@@ -13,9 +13,9 @@ const HowItWorks = () => {
           </span>{" "}
           algorithm works
         </h2>
-        <p className="text-white-main/70 text-center text-lg sm:text-xl font-medium lg:w-[50%]">
+        {/* <p className="text-white-main/70 text-center text-lg sm:text-xl font-medium lg:w-[50%]">
           A generic Image depicting any work flow
-        </p>
+        </p> */}
         <NextImage
           imageSrc="/Assets/HowItWorks.jpeg"
           containerStyle="w-full xl:h-[600px] lg:h-[500px] md:h-[400px] sm:h-[300px] h-[200px] rounded-2xl"

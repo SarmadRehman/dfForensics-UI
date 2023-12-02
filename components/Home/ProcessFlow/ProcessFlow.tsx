@@ -3,24 +3,24 @@ import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import React from "react";
 import ProcessCard from "./ProcessCard";
 import { MdOutlineVerified, MdMonitor, MdSecurity } from "react-icons/md";
-const ProcessFlow = () => {
+const UseCases = () => {
   const steps = [
     {
       title: "Media Verification",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "One of our Deepfake forensics tool's superior capabilities, ensuring authenticity in visual content across various media platforms.",
       icon: <MdOutlineVerified className="text-[60px] text-brand-main" />,
     },
     {
       title: "KYC Security",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "Leveraging our cutting-edge Deepfake forensics tool to bolster Know Your Customer (KYC) procedures, guarding against fraudulent identities.",
       icon: <MdSecurity className="text-[60px] text-brand-main" />,
     },
     {
       title: "Social Media Monitoring",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "Our market-leading Deepfake forensics tool safeguards social platforms by detecting and preventing image, video, and audio forgeries.",
       icon: <MdMonitor className="text-[60px] text-brand-main" />,
     },
   ];
@@ -53,4 +53,4 @@ const ProcessFlow = () => {
   );
 };
 
-export default ProcessFlow;
+export default UseCases;
