@@ -20,7 +20,7 @@ const OurTeam = () => {
     },
     {
       name: "Asad Mirza",
-      avatar: "/Assets/Team/Person.avif",
+      avatar: "/Assets/Team/asadmirza.jpg",
       role: "Researcher",
       twitter: "",
       linkedin: "",
