@@ -27,7 +27,7 @@ const OurTeam = () => {
       github: "",
     },
     {
-      name: "Asad Mirza",
+      name: "Wijdan Haider",
       avatar: "/Assets/Team/Person.avif",
       role: "Admin",
       twitter: "",
@@ -35,8 +35,8 @@ const OurTeam = () => {
       github: "",
     },
     {
-      name: "Asad Mirza",
-      avatar: "/Assets/Team/Person.avif",
+      name: "Sarmad Rehman",
+      avatar: "/Assets/Team/sarmad.png",
       role: "Admin",
       twitter: "",
       linkedin: "",

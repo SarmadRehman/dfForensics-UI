@@ -17,7 +17,7 @@ const ImageTest = () => {
       <div className="w-full flex items-start justify-center sm:gap-7 gap-4">
         <div className="md:w-[600px] w-full flex flex-col items-center justify-start sm:gap-8 gap-5">
           <label htmlFor="fileInput" className="w-full z-50">
-            <button className="sm:h-[200px] h-[150px] w-full z-50 flex items-center justify-center cursor-pointer rounded-xl border-[5px] border-dashed border-black-main relative flex-col gap-4">
+            <button className="sm:h-[200px] h-[150px] w-full z-50 flex items-center justify-center cursor-pointer rounded-xl border-[4px] border-dashed border-black-main relative flex-col gap-6">
               <input
                 id="fileInput"
                 type="file"

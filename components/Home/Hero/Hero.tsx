@@ -4,14 +4,18 @@ import ComponentWrapper from "../../Shared/Wrappers/ComponentWrapper";
 const Hero = () => {
   return (
     <ComponentWrapper style="lg:h-[calc(100dvh-[144px])]">
-      <div className="w-full grid lg:grid-cols-2 gap-6">
-        <div className="w-full h-full flex flex-col items-start justify-center gap-4 mt-8 pb-8 z-50">
+      <div className="w-full grid lg:grid-cols-2 gap-2">
+        <div className="w-full h-full flex flex-col items-start justify-center gap-2 mt-6 pb-8 z-50">
           <h1 className="text-white-main font-bold text-center lg:text-left  sm:text-5xl text-4xl z-50">
             Unveil the Reality of Visuals
           </h1>
-          <p className="text-white-main text-center lg:text-left sm:text-2xl text-xl font-medium z-50 mt-6">
+          <p className="text-white-main text-center lg:text-left sm:text-2xl text-xl font-medium z-50 mt-1">
             Unmasking Truth in a World of Illusions: Deepfake Forensics -
             Exposing Realities, Unveiling Authenticity
+          </p>
+          <p className="text-white-main text-center lg:text-left sm:text-2xl text-xl font-medium z-50 mt-1">
+            Our high-caliber deepfake detection services safeguard truth and
+            authenticity amidst the proliferation of manipulated visuals
           </p>
           {/* <p className="text-white text-center lg:text-left sm:text-2xl text-xl font-medium z-50 mt-6">
             In a world flooded with manipulated media, our advanced technology
