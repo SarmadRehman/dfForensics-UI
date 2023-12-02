@@ -72,7 +72,13 @@ const MatchJobs = () => {
                 isTop={item.isTop}
                 detail={item.detail}
                 style={
-                  index == 0 ? "left-3" : index == 4 ? "right-3" : "left-0"
+                  index == 0
+                    ? "left-3"
+                    : index == 4
+                    ? "right-3"
+                    : index == 3
+                    ? "-right-12"
+                    : "left-0"
                 }
               />
             ))}

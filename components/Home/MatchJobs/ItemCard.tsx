@@ -21,7 +21,7 @@ const ItemCard: React.FC<Props> = ({
     <div className="flex flex-col items-center justify-start xl:gap-5 md:gap-3 sm:gap-2 group relative cursor-pointer">
       {/* tooltip */}
       <div
-        className={`absolute pointer-events-none -top-36 bg-white-main w-[300px] px-3 rounded-lg shadow-lg hidden group-hover:duration-200 ease-in group-hover:flex z-10 ${style}`}
+        className={`absolute pointer-events-none -top-36 bg-white-main w-[200px] sm:w-[300px] p-3 rounded-lg shadow-lg hidden group-hover:duration-200 ease-in group-hover:flex z-50  ${style}`}
       >
         <p className="text-sm sm:text-base font-medium text-black-main ">
           {detail}
