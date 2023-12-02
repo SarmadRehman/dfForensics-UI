@@ -39,30 +39,12 @@ const Features = () => {
                 genuine talent seamlessly.
               </p>
             </div>
-            <div className="w-full flex items-start justify-start gap-3">
-              <BsCheckCircle className="text-2xl text-brand-secondary flex-shrink-0" />
-              <p className="text-base sm:text-lg text-gray-main font-medium lg:w-[70%]">
-                <span className="text-black-main font-bold">
-                  {" "}
-                  Empower Authenticity: Filter Authentic Talent with Precision:{" "}
-                </span>
-                Leverage our cutting-edge deepfake detection framework to sift
-                through applications, spotlighting genuine expressions and
-                skills. Empower authentic voices and talents to shine through by
-                effortlessly detecting and excluding manipulated audiovisual
-                content. Our platform is dedicated to fostering genuine talent,
-                ensuring a fair and transparent selection process.
-              </p>
-            </div>
-            <button className="px-8 py-5 bg-brand-main rounded-xl flex items-center justify-center text-white-main sm:text-lg text-base font-medium hover:bg-brand-main/90 hover:duration-200">
-              More Features/ iF aNy
-            </button>
           </aside>
-          <aside className="w-full h-full">
+          <aside className="w-full h-full flex items-center justify-center">
             <NextImage
-              imageSrc="/Assets/Features/Feature2.png"
-              imageStyle="lg:object-cover object-contain"
-              containerStyle="w-full lg:h-full h-[300px] sm:h-[400px]"
+              imageSrc="/Assets/Features/Man.jpeg"
+              imageStyle="object-cover rounded-2xl"
+              containerStyle="md:w-[500px] w-full h-[300px] sm:h-[400px] rounded-2xl"
             />
           </aside>
         </div>

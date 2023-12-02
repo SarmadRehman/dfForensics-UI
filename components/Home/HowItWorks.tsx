@@ -17,8 +17,9 @@ const HowItWorks = () => {
           A generic Image depicting any work flow
         </p>
         <NextImage
-          imageSrc="/Assets/HowItWorks.png"
-          containerStyle="w-full md:h-[800px] sm:h-[500px] h-[400px]"
+          imageSrc="/Assets/HowItWorks.jpeg"
+          containerStyle="w-full xl:h-[600px] lg:h-[500px] md:h-[400px] sm:h-[300px] h-[200px] rounded-2xl"
+          imageStyle="object-fill rounded-2xl"
         />
       </div>
     </ComponentWrapper>

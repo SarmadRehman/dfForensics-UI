@@ -34,7 +34,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <ComponentWrapper style="bg-transparent h-[80px] z-50">
+      <ComponentWrapper style="bg-brand-main h-[80px] z-50">
         <div className="w-full h-full flex items-center justify-between z-50">
           <Link href={"/"} className="relative h-[20px] w-[95px]">
             <h1 className="text-white-main text-3xl">LOGOdfF</h1>

@@ -6,45 +6,53 @@ import ItemCard from "./ItemCard";
 const MatchJobs = () => {
   const steps = [
     {
-      title: "if Any",
+      title: "Data Input",
       isTop: true,
-      logo: "/Assets/MatchJobs/Recruiters.png",
+      logo: "/Assets/MatchJobs/input.png",
+      detail:
+        "Backend receives raw video and audio, initiating data preparation before analysis. This ensures optimal input quality for the subsequent model examination.",
     },
     {
-      title: "if Any",
+      title: "Preprocessing",
       isTop: false,
-      logo: "/Assets/MatchJobs/Candidates.png",
+      logo: "/Assets/MatchJobs/preprocess.png",
+      detail:
+        " Preprocessing readies data for the model by cleaning, standardizing, and transforming, ensuring optimal input quality and enhancing model performance",
     },
     {
-      title: "if Any",
+      title: "Transformative Analysis",
       isTop: true,
-      logo: "/Assets/MatchJobs/JobOpening.png",
+      logo: "/Assets/MatchJobs/transformative_analysis.png",
+      detail:
+        "Preprocessed data enters the transformer model, concurrently analyzing visual and audio elements. Extracted features discern patterns signaling potential deepfake manipulation",
     },
     {
-      title: "if Any",
+      title: "Result Generation and Validation",
       isTop: false,
-      logo: "/Assets/MatchJobs/Companies.png",
+      logo: "/Assets/MatchJobs/result_generation_and_validation.png",
+      detail:
+        "The model generates results, including confidence scores and interpretative heatmaps. Results undergo validation checks to ensure accuracy and reliability",
     },
     {
-      title: "if Any",
+      title: "Communication of Results",
       isTop: true,
-      logo: "/Assets/MatchJobs/HumanResources.png",
+      logo: "/Assets/MatchJobs/result.png",
+      detail:
+        "Validated results are communicated to the frontend, where they are received, interpreted, and presented to users, offering transparent insights into detected deepfake likelihood",
     },
   ];
   return (
     <ComponentWrapper style="lg:py-28 py-12 bg-white-main">
       <div className="w-full flex flex-col items-center justify-start gap-12">
         <h2 className="text-black-main text-center sm:text-6xl text-[44px] font-bold lg:w-[70%]">
-          Any special feature pertaining{" "}
+          Workflow of{" "}
           <span className="bg-[url('/Assets/Process/UnderLine.png')] bg-bottom bg-no-repeat bg-contain">
-            to Deepfake Forensics.
+            Deepfake Forensics
           </span>
         </h2>
-        <p className="text-gray-main text-center text-lg sm:text-xl font-medium lg:w-[50%]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
-        </p>
+        {/* <p className="text-gray-main text-center text-lg sm:text-xl font-medium lg:w-[50%]">
+          card text data here
+        </p> */}
         <div className="w-full flex flex-col items-center justify-start md:gap-8 gap-3">
           <NextImage
             imageSrc="/Assets/MatchJobs/MainCircle.png"
@@ -62,6 +70,7 @@ const MatchJobs = () => {
                 title={item.title}
                 logo={item.logo}
                 isTop={item.isTop}
+                detail={item.detail}
               />
             ))}
           </div>

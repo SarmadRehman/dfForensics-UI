@@ -5,76 +5,79 @@ import { BiFilterAlt } from "react-icons/bi";
 import { CiSearch } from "react-icons/ci";
 import { FiCalendar } from "react-icons/fi";
 import { TfiEmail } from "react-icons/tfi";
+import { GiSoundWaves } from "react-icons/gi";
+import { FaVideo, FaBrain } from "react-icons/fa";
+import { FaImage } from "react-icons/fa6";
 
 const FeaturesTab = () => {
-  const [isActive, setisActive] = useState<string>("Deal Tracking");
+  const [isActive, setisActive] = useState<string>("Audio Forgeries");
   const setActiveFeature = (feature: string) => {
     setisActive(feature);
   };
   const features = [
     {
-      name: "Deal Tracking",
+      name: "Audio Forgeries",
       detail:
         "Deals are often organized into a sales or business development pipeline.",
       icon: (
-        <CiSearch className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
+        <GiSoundWaves className="text-white-main sm:h-[54px] h-[34px] w-[34px] sm:w-[54px]" />
       ),
       background: "bg-brand-secondary",
     },
     {
-      name: "Pipeline Management",
+      name: "Video Forgeries",
       detail:
         "Once a lead is qualified, sales representatives make initial contact.",
       icon: (
-        <BiFilterAlt className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
+        <FaVideo className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
       ),
-      background: "bg-[#F7C31D]",
+      background: "bg-brand-secondary",
     },
     {
-      name: "Interview Scheduling",
+      name: "Interpretability",
       detail:
         "Consider various interview formats, such as in-person, phone, video.",
       icon: (
-        <FiCalendar className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
+        <FaBrain className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
       ),
-      background: "bg-[#39C0C8]",
+      background: "bg-brand-secondary",
     },
     {
-      name: "Email Tracking",
+      name: "Image Forgeries",
       detail:
         "In some cases, email tracking can also provide information about that.",
       icon: (
-        <TfiEmail className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
+        <FaImage className="text-white-main sm:h-[44px] h-[34px] w-[34px] sm:w-[44px]" />
       ),
-      background: "bg-[#FF7049]",
+      background: "bg-brand-secondary",
     },
   ];
   return (
     <div className="w-full grid lg:grid-cols-2 xl:gap-10 gap-8 lg:pr-10 lg:pl-0 md:pl-10">
-      <aside className="w-full h-full">
-        {isActive === "Deal Tracking" ? (
+      <aside className="w-full h-full flex items-center justify-center">
+        {isActive === "Audio Forgeries" ? (
           <NextImage
-            imageSrc="/Assets/Features/Feature1.png"
-            imageStyle="lg:object-cover object-contain"
-            containerStyle="w-full lg:h-full h-[300px] sm:h-[400px] sm:inline-block hidden"
+            imageSrc="/Assets/Features/Audio.jpeg"
+            imageStyle="object-cover rounded-2xl"
+            containerStyle="md:w-[500px] w-full h-[300px] sm:h-[400px] rounded-2xl"
           />
-        ) : isActive === "Pipeline Management" ? (
+        ) : isActive === "Video Forgeries" ? (
           <NextImage
-            imageSrc="/Assets/Features/Feature2.png"
-            imageStyle="lg:object-cover object-contain"
-            containerStyle="w-full lg:h-full h-[300px] sm:h-[400px] sm:inline-block hidden"
+            imageSrc="/Assets/Features/Video.jpeg"
+            imageStyle="object-cover rounded-2xl"
+            containerStyle="md:w-[500px] w-full h-[300px] sm:h-[400px] rounded-2xl"
           />
-        ) : isActive === "Interview Scheduling" ? (
+        ) : isActive === "Interpretability" ? (
           <NextImage
-            imageSrc="/Assets/Features/Feature1.png"
-            imageStyle="lg:object-cover object-contain"
-            containerStyle="w-full lg:h-full h-[300px] sm:h-[400px] sm:inline-block hidden"
+            imageSrc="/Assets/Features/Int.jpeg"
+            imageStyle="object-cover rounded-2xl"
+            containerStyle="md:w-[500px] w-full h-[300px] sm:h-[400px] rounded-2xl"
           />
         ) : (
           <NextImage
-            imageSrc="/Assets/Features/Feature2.png"
-            imageStyle="lg:object-cover object-contain"
-            containerStyle="w-full lg:h-full h-[300px] sm:h-[400px] sm:inline-block hidden"
+            imageSrc="/Assets/Features/Image.jpeg"
+            imageStyle="object-cover rounded-2xl"
+            containerStyle="md:w-[500px] w-full h-[300px] sm:h-[400px] rounded-2xl"
           />
         )}
       </aside>
@@ -82,7 +85,7 @@ const FeaturesTab = () => {
         {features.map((item: any, index: number) => (
           <div
             key={index}
-            onClick={() => setActiveFeature(item.name)}
+            onMouseEnter={() => setActiveFeature(item.name)}
             className={`w-full flex flex-col sm:flex-row items-center justify-start gap-5 cursor-pointer p-3 rounded-lg hover:duration-200 ${
               isActive === item.name
                 ? "sm:bg-slate-200/30"

@@ -59,9 +59,9 @@ const Footer = () => {
   return (
     <footer className="w-full flex flex-col border-t border-t-white-main/10">
       <ComponentWrapper style="bg-black-main py-12">
-        <div className="w-full grid grid-cols-2 lg:grid-cols-[1.5fr,1fr,1fr,1fr,1fr] lg:gap-4 gap-6">
+        <div className="w-full grid md:grid-cols-3  lg:gap-4 gap-6 ">
           {/* first column */}
-          <div className="w-full flex flex-col items-start justify-start gap-6 lg:col-auto col-span-2">
+          <div className="w-full flex flex-col items-start justify-between gap-6 lg:col-auto col-span-2">
             <Link href={"/"}>
               <h1 className="text-white-main text-3xl">LOGO dfF</h1>
               {/* <NextImage
@@ -72,31 +72,31 @@ const Footer = () => {
             <p className="text-sm sm:text-base text-white-main/60 font-medium">
               University of Engineering and Technology Taxila Pakistan
             </p>
-            <div className="w-full flex flex-col items-start justify-start">
-              <p className="text-sm sm:text-base text-white-main/60 font-medium">
-                info@deepfakeforensics.com
-              </p>
-              <p className="text-sm sm:text-base text-white-main/60 font-medium">
-                NL: +00 0 0000000
-              </p>
-              <p className="text-sm sm:text-base text-white-main/60 font-medium">
-                BE: +00 0 0000000
-              </p>
-            </div>
-            <div className="w-full flex items-center justify-start gap-3">
-              <span className="w-[28px] h-[28px] flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
-                <FaYoutube className="text-base text-black-main" />
-              </span>
-              <span className="w-[28px] h-[28px] flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
-                <FaLinkedinIn className="text-base text-black-main" />
-              </span>
-              <span className="w-[28px] h-[28px] flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
-                <FaFacebookF className="text-base text-black-main" />
-              </span>
-            </div>
+          </div>
+          <div className="w-full flex flex-col items-start  justify-end">
+            <p className="text-sm sm:text-base text-white-main/60 font-medium">
+              info@deepfakeforensics.com
+            </p>
+            <p className="text-sm sm:text-base text-white-main/60 font-medium">
+              NL: +00 0 0000000
+            </p>
+            <p className="text-sm sm:text-base text-white-main/60 font-medium">
+              BE: +00 0 0000000
+            </p>
+          </div>
+          <div className="w-full flex items-center justify-end gap-3">
+            <span className="w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
+              <FaYoutube className="text-base text-black-main" />
+            </span>
+            <span className="w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
+              <FaLinkedinIn className="text-base text-black-main" />
+            </span>
+            <span className="w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
+              <FaFacebookF className="text-black-main " />
+            </span>
           </div>
           {/* other columns */}
-          {columnsData.map((item: any, index: number) => (
+          {/* {columnsData.map((item: any, index: number) => (
             <div
               key={index}
               className="w-full flex flex-col items-start justify-start gap-6"
@@ -116,7 +116,7 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </ComponentWrapper>
       <ComponentWrapper style="bg-[#1E1E1E] py-3">
