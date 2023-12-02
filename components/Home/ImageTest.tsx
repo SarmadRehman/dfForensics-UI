@@ -17,7 +17,7 @@ const ImageTest = () => {
       <div className="w-full flex items-start justify-center sm:gap-7 gap-4">
         <div className="md:w-[600px] w-full flex flex-col items-center justify-start sm:gap-8 gap-5">
           <label htmlFor="fileInput" className="w-full z-50">
-            <button className="sm:h-[200px] h-[150px] w-full z-50 flex items-center justify-center cursor-pointer rounded-xl border-[4px] border-dashed border-black-main relative flex-col gap-6">
+            <button className="sm:h-[200px] h-[170px] px-2 w-full z-50 flex items-center justify-center cursor-pointer rounded-xl border-[4px] border-dashed border-black-main relative flex-col sm:gap-6 gap-3">
               <input
                 id="fileInput"
                 type="file"
@@ -25,8 +25,8 @@ const ImageTest = () => {
                 onChange={handleFileChange}
                 className="w-full h-full z-50 opacity-0 absolute top-0 left-0 cursor-pointer"
               />{" "}
-              <LuUpload className="sm:text-5xl text-4xl text-black-main" />
-              <h2 className="text-black-main sm:text-3xl text-xl text-center font-semi-bold">
+              <LuUpload className="sm:text-5xl text-4xl text-black-main flex-shrink-0" />
+              <h2 className="text-black-main sm:text-3xl text-xl text-center font-semi-bold sm:w-auto w-full rounded-xl font-medium border-2 border-white-main hover:bg-white-main/10 hover:duration-200">
                 Upload Here
               </h2>
               <p className="">

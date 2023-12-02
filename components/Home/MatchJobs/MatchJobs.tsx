@@ -71,6 +71,9 @@ const MatchJobs = () => {
                 logo={item.logo}
                 isTop={item.isTop}
                 detail={item.detail}
+                style={
+                  index == 0 ? "left-3" : index == 4 ? "right-3" : "left-0"
+                }
               />
             ))}
           </div>
