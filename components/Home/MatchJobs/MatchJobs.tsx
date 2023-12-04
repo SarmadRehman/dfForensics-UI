@@ -27,7 +27,7 @@ const MatchJobs = () => {
         "Preprocessed data enters the transformer model, concurrently analyzing visual and audio elements. Extracted features discern patterns signaling potential deepfake manipulation",
     },
     {
-      title: "Result Generation and Validation",
+      title: "Results and Validation",
       isTop: false,
       logo: "/Assets/MatchJobs/result_generation_and_validation.png",
       detail:

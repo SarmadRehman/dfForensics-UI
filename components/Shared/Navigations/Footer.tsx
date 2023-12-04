@@ -61,7 +61,7 @@ const Footer = () => {
       <ComponentWrapper style="bg-black-main py-12">
         <div className="w-full grid md:grid-cols-3  lg:gap-4 gap-6 ">
           {/* first column */}
-          <div className="w-full flex flex-col items-start justify-between gap-6 lg:col-auto col-span-2">
+          <div className="w-full flex flex-col items-start justify-between gap-6 lg:col-span-1 md:col-span-2">
             <Link href={"/"}>
               <h1 className="text-white-main text-3xl">LOGO dfF</h1>
               {/* <NextImage
@@ -84,7 +84,7 @@ const Footer = () => {
               BE: +00 0 0000000
             </p>
           </div>
-          <div className="w-full flex items-center justify-end gap-3">
+          <div className="w-full flex items-center lg:justify-end jusify-start gap-3">
             <span className="w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white-main/60 hover:scale-105 hover:duration-200">
               <FaYoutube className="text-base text-black-main" />
             </span>
