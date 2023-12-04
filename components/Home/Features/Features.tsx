@@ -5,24 +5,24 @@ import FeaturesTab from "./FeaturesTab";
 
 const Features = () => {
   return (
-    <section className="max-w-full px-5 md:px-0 lg:py-28 py-12 bg-white-main">
+    <section className="w-full px-5 md:px-0 lg:py-28 py-12 bg-white-main">
       <div className="w-full flex flex-col items-center justify-start gap-16">
-        <h2 className="text-black-main text-center sm:text-6xl text-4xl font-bold lg:w-[70%]">
+        <div className="w-full text-black-main text-center sm:text-6xl text-[44px] font-bold lg:w-[70%]">
           <span className="bg-[url('/Assets/Features/Circle.png')] bg-center bg-no-repeat bg-contain">
             Research
           </span>{" "}
-          features leading to the DeepfakeForensics
-        </h2>
+          <span>features leading to the Deepfake Forensics</span>
+        </div>
         <FeaturesTab />
 
-        <div className="max-w-full flex flex-col-reverse items-center justify-start lg:grid lg:grid-cols-2 xl:gap-10 gap-8 lg:pl-16 lg:pr-0 md:px-10 my-12">
+        <div className="w-full flex flex-col-reverse items-center justify-start lg:grid lg:grid-cols-2 xl:gap-10 gap-8 lg:pl-16 lg:pr-0 md:px-10 my-12">
           <aside className="w-full flex flex-col items-center lg:items-start justify-start xl:gap-12 gap-5">
-            <h2 className="text-black-main lg:text-left text-center sm:text-6xl text-4xl font-bold ">
-              DeepfakeForensics is built for{" "}
+            <div className="text-black-main lg:text-left text-center sm:text-6xl text-[44px] font-bold ">
+              <span>Deepfake Forensics is built for </span>
               <span className="bg-[url('/Assets/Features/Circle.png')] bg-center bg-no-repeat bg-contain">
                 You
               </span>
-            </h2>
+            </div>
             <div className="w-full flex items-start justify-start gap-3">
               <BsCheckCircle className="text-2xl text-brand-secondary flex-shrink-0" />
               <p className="text-base sm:text-lg text-gray-main font-medium lg:w-[70%]">
